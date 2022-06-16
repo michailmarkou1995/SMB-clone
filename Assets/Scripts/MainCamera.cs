@@ -21,8 +21,8 @@ public class MainCamera : MonoBehaviour {
 		target = mario.gameObject;
 
 		GameObject boundary = GameObject.Find ("Level Boundary");
-		leftEdge = boundary.transform.FindChild ("Left Boundary").transform;
-		rightEdge = boundary.transform.FindChild ("Right Boundary").transform;
+		leftEdge = boundary.transform.Find ("Left Boundary").transform;
+		rightEdge = boundary.transform.Find ("Right Boundary").transform;
 		float aspectRatio = GetComponent<MainCameraAspectRatio> ().targetAspects.x /
 		                    GetComponent<MainCameraAspectRatio> ().targetAspects.y;
 		cameraWidth = Camera.main.orthographicSize * aspectRatio;

@@ -14,8 +14,8 @@ public class Castle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		t_LevelManager = FindObjectOfType<LevelManager> ();
-		flag = transform.FindChild ("Flag");
-		flagStop = transform.FindChild ("Flag Stop");
+		flag = transform.Find ("Flag");
+		flagStop = transform.Find ("Flag Stop");
 	}
 
 	void FixedUpdate() {

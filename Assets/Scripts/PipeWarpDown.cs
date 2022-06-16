@@ -16,7 +16,7 @@ public class PipeWarpDown : MonoBehaviour {
 	void Start () {
 		t_LevelManager = FindObjectOfType<LevelManager> ();
 		mario = FindObjectOfType<Mario> ();
-		stop = transform.parent.transform.FindChild ("Platform Stop");
+		stop = transform.parent.transform.Find ("Platform Stop");
 	}
 
 	void FixedUpdate() {

@@ -567,7 +567,7 @@ public class LevelManager : MonoBehaviour {
 		if (t_GameStateManager.spawnFromPoint) {
 			spawnPosition = GameObject.Find ("Spawn Points").transform.GetChild (t_GameStateManager.spawnPointIdx).transform.position;
 		} else {
-			spawnPosition = GameObject.Find ("Spawn Pipes").transform.GetChild (t_GameStateManager.spawnPipeIdx).transform.FindChild("Spawn Pos").transform.position;
+			spawnPosition = GameObject.Find ("Spawn Pipes").transform.GetChild (t_GameStateManager.spawnPipeIdx).transform.Find("Spawn Pos").transform.position;
 		}
 		return spawnPosition;
 	}

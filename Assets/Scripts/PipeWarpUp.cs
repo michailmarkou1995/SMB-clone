@@ -15,7 +15,7 @@ public class PipeWarpUp : MonoBehaviour {
 
 	void Start () {
 		mario = FindObjectOfType<Mario> ();
-		stop = transform.parent.transform.FindChild ("Platform Stop");
+		stop = transform.parent.transform.Find ("Platform Stop");
 		GameStateManager t_GameStateManager = FindObjectOfType<GameStateManager> ();
 		t_LevelManager = FindObjectOfType<LevelManager> ();
 

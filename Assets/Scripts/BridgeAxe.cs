@@ -18,7 +18,7 @@ public class BridgeAxe : MonoBehaviour {
 		mario = FindObjectOfType<Mario> ();
 		bowser = FindObjectOfType<Bowser> ();
 
-		foreach (Transform child in transform.parent.FindChild("Bridge Pieces")) {
+		foreach (Transform child in transform.parent.Find("Bridge Pieces")) {
 			bridgePieces.Add (child.gameObject);
 		}
 	}

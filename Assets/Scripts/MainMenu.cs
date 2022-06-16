@@ -40,14 +40,14 @@ public class MainMenu : MonoBehaviour {
 
 	public void OnMouseHover(Button button) {
 		if (!volumePanelActive) {
-			GameObject cursor = button.transform.FindChild ("Cursor").gameObject;
+			GameObject cursor = button.transform.Find ("Cursor").gameObject;
 			cursor.SetActive (true);
 		}
 	}
 
 	public void OnMouseHoverExit(Button button) {
 		if (!volumePanelActive) {
-			GameObject cursor = button.transform.FindChild ("Cursor").gameObject;
+			GameObject cursor = button.transform.Find ("Cursor").gameObject;
 			cursor.SetActive (false);
 		}
 	}

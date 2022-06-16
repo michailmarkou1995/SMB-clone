@@ -66,9 +66,9 @@ public class Mario : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		t_LevelManager = FindObjectOfType<LevelManager>();
-		m_GroundCheck1 = transform.FindChild ("Ground Check 1");
-		m_GroundCheck2 = transform.FindChild ("Ground Check 2");
-		m_StompBox = transform.FindChild ("Stomp Box").gameObject;
+		m_GroundCheck1 = transform.Find ("Ground Check 1");
+		m_GroundCheck2 = transform.Find ("Ground Check 2");
+		m_StompBox = transform.Find ("Stomp Box").gameObject;
 		m_Animator = GetComponent<Animator> ();
 		m_Rigidbody2D = GetComponent<Rigidbody2D> ();
 		m_CircleCollider2D = GetComponent<CircleCollider2D> ();

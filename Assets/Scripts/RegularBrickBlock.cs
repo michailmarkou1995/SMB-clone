@@ -20,7 +20,7 @@ public class RegularBrickBlock : MonoBehaviour {
 	void Start () {
 		t_LevelManager = FindObjectOfType<LevelManager> ();
 		m_Animator = GetComponent<Animator> ();
-		m_CoinDetector = transform.parent.FindChild ("Coin Detector").GetComponent<RegularBrickBlockCoinDetector> ();
+		m_CoinDetector = transform.parent.Find ("Coin Detector").GetComponent<RegularBrickBlockCoinDetector> ();
 		time1 = 0;
 	}
 
